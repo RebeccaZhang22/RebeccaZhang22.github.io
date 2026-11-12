@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yutong Zhang - Homepage</title>
+  <meta name="description" content="Yutong Zhang, M.S. student at Tsinghua University. Research on understanding the behavior of LLMs and agents.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ========== 顶部导航 ========== -->
+  <header class="masthead">
+    <nav>
+      <a class="home" href="#about-me">Homepage</a>
+      <ul class="menu">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Selected Projects</a></li>
+        <li><a href="#honors">Honors</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <div id="main">
+
+    <!-- ========== 左侧个人信息 ========== -->
+    <aside class="sidebar">
+      <div class="avatar">
+        <img src="images/photo.jpg" alt="Yutong Zhang"
+             onerror="this.onerror=null;this.src='images/avatar-placeholder.svg'">
+      </div>
+      <h3 class="author-name">Yutong Zhang</h3>
+      <p class="author-bio">M.S. Student<br>Department of Computer Science and Technology, Tsinghua University</p>
+      <ul class="author-urls">
+        <li><i class="fa-solid fa-fw fa-location-dot"></i> Beijing, China</li>
+        <li><a href="mailto:yutong_z22@163.com"><i class="fa-solid fa-fw fa-envelope"></i> Email</a></li>
+        <li><a href="files/CV.pdf"><i class="fa-solid fa-fw fa-file-lines"></i> CV</a></li>
+        <li><a href="https://github.com/RebeccaZhang22"><i class="fa-brands fa-fw fa-github"></i> Github</a></li>
+      </ul>
+    </aside>
+
+    <!-- ========== 正文 ========== -->
+    <main class="page-content">
+
+      <section id="about-me">
+        <p>
+          I am a master's student in the Department of Computer Science and Technology at
+          <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>.
+          I also received my bachelor's degree from the same department.
+        </p>
+        <p>
+          I was a research intern at <a href="https://www.antgroup.com/en">Ant Group</a> and
+          <a href="https://www.minimax.io/">MiniMax</a>, and I am now a researcher at
+          <a href="https://www.siliconprospect.com/">SiliconProspect AI (硅基守望)</a>.
+        </p>
+        <p>
+          My research interests lie in <strong>Large Language Models</strong> and <strong>LLM Agents</strong>.
+          I study why models behave unreliably by looking at three levels: how consistently they behave
+          when a request is rephrased, what their internal representations encode before they generate,
+          and when an agent commits to a harmful action during its reasoning. I also turn these findings
+          into detection and defense systems that run in real products.
+        </p>
+        <p>
+          Outside research, I am an AIDA 4 Star freediver 🌊. I spend most of my holidays outdoors.
+          I hope the ocean stays this beautiful for a long time.
+          Here are my <a href="travel.html">past trips and travel plans</a>.
+        </p>
+        <p>If you are interested in collaborating, feel free to reach out 🤝</p>
+
+        <div class="research-tags">
+          <span class="research-tag tag-reasoning">🧠 Model Behavior</span>
+          <span class="research-tag tag-agents">🤖 LLM Agents</span>
+          <span class="research-tag tag-codegen">🔬 Interpretability</span>
+          <span class="research-tag tag-safety">🛡️ Safety &amp; Reliability</span>
+          <span class="research-tag tag-self-evolve">📏 Evaluation</span>
+        </div>
+      </section>
+
+      <section id="news">
+        <h1>News</h1>
+        <ul>
+          <li><em>2026.10</em>: I attended EMNLP 2026 in Budapest, Hungary. It was a wonderful experience!</li>
+          <li><em>2026.09</em>: I started my master's study at <strong>Tsinghua CST</strong>.</li>
+          <li><em>2026.08</em>: I joined <a href="https://www.siliconprospect.com/"><strong>SiliconProspect AI (硅基守望)</strong></a> as a researcher.</li>
+          <li><em>2026.08</em>: My <strong>first-authored</strong> paper <em>INTENT-AS-A-TOOL</em> is accepted to <strong>EMNLP 2026</strong> Main Conference!</li>
+          <li><em>2026.06</em>: I graduated from <strong>Tsinghua CST</strong> with a bachelor's degree.</li>
+          <li><em>2026.05</em>: Our paper on <em>IFEval++</em> is accepted to <strong>ACL 2026</strong> Main Conference (<strong>oral</strong>)!</li>
+          <li><em>2025.11</em>: I attended EMNLP 2025 in Suzhou, China.</li>
+          <li><em>2025.10</em>: I joined <strong>MiniMax</strong> as a post-training data &amp; algorithm intern.</li>
+          <li><em>2025.08</em>: Our paper <em>"I've Decided to Leak"</em> is accepted to <strong>EMNLP 2025</strong> Main Conference (<strong>oral</strong>)!</li>
+          <li><em>2025.06</em>: I joined <strong>Ant Group</strong> as a research intern.</li>
+          <li><em>2022.09</em>: I started my undergraduate study at <strong>Tsinghua CST</strong>.</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h1>Education</h1>
+        <ul>
+          <li><em>2026.09 - present</em>, Tsinghua University, M.S. in Computer Science and Technology.</li>
+          <li><em>2022.09 - 2026.06</em>, Tsinghua University, B.E. in Computer Science and Technology.</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h1>Publications</h1>
+
+        <div class="paper-box">
+          <div class="paper-box-image">
+            <div><div class="badge">Preprint</div><img src="images/show-up-attack.png" alt="Show-up attack overview"></div>
+          </div>
+          <div class="paper-box-text">
+            <p><a href="https://arxiv.org/abs/2610.27574">The Show-Up Attack: When Subagents Win Over Their Supervisor</a></p>
+            <p>Maosen Zhang, Jianshuo Dong, <strong>Yutong Zhang</strong>, Jie Zhang, Tianwei Zhang, Han Qiu</p>
+            <p>Preprint</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2610.27574">arXiv</a></p>
+          </div>
+        </div>
+
+        <div class="paper-box">
+          <div class="paper-box-image">
+            <div><div class="badge">EMNLP 2026</div><img src="images/intent-pipeline.png" alt="INTENT-AS-A-TOOL overview"></div>
+          </div>
+          <div class="paper-box-text">
+            <p><a href="https://arxiv.org/abs/2608.27348">INTENT-AS-A-TOOL Makes it Easy to Track Agentic Misalignment</a></p>
+            <p><strong>Yutong Zhang</strong>, Jianshuo Dong, Peng Xu, Long Wang, Jie Zhang, Tianwei Zhang, Xiaoping Zhang, Han Qiu</p>
+            <p>Accepted by <strong>EMNLP 2026</strong> Main Conference</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2608.27348">arXiv</a></p>
+          </div>
+        </div>
+
+        <div class="paper-box">
+          <div class="paper-box-image">
+            <div><div class="badge">ACL 2026 Oral</div><img src="images/if-cousin-prompts.png" alt="IFEval++ cousin prompts"></div>
+          </div>
+          <div class="paper-box-text">
+            <p><a href="https://aclanthology.org/2026.acl-long.354/">Revisiting the Reliability of Language Models in Instruction-Following</a></p>
+            <p>Jianshuo Dong, <strong>Yutong Zhang</strong>, Liu Yan, Zhenyu Zhong, Tao Wei, Chao Zhang, Han Qiu</p>
+            <p>Accepted by <strong>ACL 2026</strong> Main Conference (<strong>oral</strong>)</p>
+            <p class="paper-links"><a href="https://aclanthology.org/2026.acl-long.354/">Paper</a> <a href="https://aclanthology.org/2026.acl-long.354.pdf">PDF</a></p>
+          </div>
+        </div>
+
+        <div class="paper-box">
+          <div class="paper-box-image">
+            <div><div class="badge">Technical Report</div><img src="images/minimax-m2.png" alt="MiniMax-M2 series results"></div>
+          </div>
+          <div class="paper-box-text">
+            <p><a href="https://arxiv.org/abs/2605.26494">The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence</a></p>
+            <p><strong>MiniMax Team</strong></p>
+            <p>
+              I worked on post-training data and rewards for coding agents, using rubrics and an LLM judge to check whether long trajectories follow behavior rules and task instructions.
+            </p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2605.26494">arXiv</a></p>
+          </div>
+        </div>
+
+        <div class="paper-box">
+          <div class="paper-box-image">
+            <div><div class="badge">EMNLP 2025 Oral</div><img src="images/leak-pipeline.png" alt="Prompt leakage intent probing pipeline"></div>
+          </div>
+          <div class="paper-box-text">
+            <p><a href="https://aclanthology.org/2025.emnlp-main.1082/">"I've Decided to Leak": Probing Internals Behind Prompt Leakage Intents</a></p>
+            <p>Jianshuo Dong, <strong>Yutong Zhang</strong>, Liu Yan, Zhenyu Zhong, Tao Wei, Ke Xu, Minlie Huang, Chao Zhang, Han Qiu</p>
+            <p>Accepted by <strong>EMNLP 2025</strong> Main Conference (<strong>oral</strong>)</p>
+            <p>Supported by the Fundamental Security Algorithm Department of Ant Group. The probe was deployed in Ant Afu (蚂蚁阿福) during my internship there.</p>
+            <p class="paper-links"><a href="https://aclanthology.org/2025.emnlp-main.1082/">Paper</a> <a href="https://aclanthology.org/2025.emnlp-main.1082.pdf">PDF</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>Selected Projects</h1>
+        <div class="paper-box">
+          <div class="paper-box-image">
+            <div><div class="badge">Industry Deployment</div><img src="images/prospectwatch.jpg" alt="SiliconProspect AI homepage"></div>
+          </div>
+          <div class="paper-box-text">
+            <p><a href="https://github.com/RebeccaZhang22/CoolWatch">CoolWatch: Runtime Safety Monitoring for LLM Agents</a></p>
+            <p><em>2026.08 - present</em>, prototype of <a href="https://www.siliconprospect.com/products/watch">ProspectWatch (观心)</a> at <a href="https://www.siliconprospect.com/">SiliconProspect AI (硅基守望)</a></p>
+            <p>
+              CoolWatch reads an agent's hidden states while it runs.
+              Probes on these states detect harmful intent, so the risk can be stopped before it becomes an action.
+            </p>
+            <p class="paper-links">
+              <a href="https://github.com/RebeccaZhang22/CoolWatch">Code</a>
+              <a href="https://www.siliconprospect.com/products/watch">Product</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="honors">
+        <h1>Honors and Awards</h1>
+        <ul>
+          <li><em>2024, 2025</em>, Scholarship for Excellence in Science and Technology Innovation, Tsinghua University.</li>
+          <li><em>2025</em>, Scholarship for Excellence in Social Practice, Tsinghua University.</li>
+          <li><em>2024</em>, Meritorious Winner, Mathematical Contest in Modeling (MCM).</li>
+        </ul>
+      </section>
+
+      <footer>© 2026 Yutong Zhang · Last updated Nov 2026</footer>
+    </main>
+  </div>
+
+  <script>
+    var btn = document.getElementById('theme-toggle');
+    function sync() { btn.textContent = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙'; }
+    btn.onclick = function () {
+      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+    };
+    sync();
+  </script>
+</body>
+</html>

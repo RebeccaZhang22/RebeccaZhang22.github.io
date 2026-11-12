@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travels - Yutong Zhang</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header class="masthead">
+    <nav>
+      <a class="home" href="index.html">Homepage</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main class="single page-content">
+    <h1 class="page-title">Travels</h1>
+    <p class="lead">Where I want to go next, and where I have been. Mostly mountains and the sea.</p>
+
+    <h1>Plans</h1>
+    <ul class="log plans">
+      <li><div><b>🤿 Philippines</b> <span>Learn scuba diving</span></div></li>
+      <li><div><b>🐋 Tonga</b> <span>See humpback whales</span></div></li>
+      <li><div><b>🐳 Timor-Leste</b> <span>See blue whales</span></div></li>
+      <li><div><b>🏔️ Nepal</b> <span>Trekking</span></div></li>
+      <li><div><b>🏛️ Italy</b> <span>Mediterranean sea, history</span></div></li>
+    </ul>
+
+    <h1>2026</h1>
+    <ul class="log">
+      <li><time>2026.10</time><div><b>🏰 Budapest, Prague, Vienna</b> <span>Hungary, Czech Republic, Austria</span></div></li>
+      <li><time>2026.08</time><div><b>🐎 Inner Mongolia</b> <span>Family road trip with my puppy, Xilingol to Chifeng</span></div></li>
+      <li><time>2026.07</time><div><b>🛕 Thailand</b> <span>Pattaya, Bangkok</span></div></li>
+      <li><time>2026.06</time><div><b>🐋 Mauritius</b> <span>Freediving with sperm whales, via Mumbai</span></div></li>
+      <li><time>2026.04</time><div><b>🌊 Qinhuangdao</b> <span>Family road trip to the sea with my puppy</span></div></li>
+      <li><time>2026.03</time><div><b>🚄 Tianjin</b> <span>Day trip</span></div></li>
+      <li><time>2026.02</time><div><b>❄️ Hokkaido, Japan</b> <span>Hakodate, Noboribetsu, Sapporo, Otaru, Asahikawa</span></div></li>
+    </ul>
+
+    <h1>2025</h1>
+    <ul class="log">
+      <li><time>2025.12</time><div><b>🏔️ Western Sichuan &amp; Yunnan</b> <span>New Year on the road</span></div></li>
+      <li><time>2025.11</time><div><b>🌿 Shanghai, Suzhou</b></div></li>
+      <li><time>2025.09</time><div><b>⛰️ Hunan</b> <span>Family trip to Changsha, Zhangjiajie, Fenghuang Ancient Town</span></div></li>
+      <li><time>2025.08</time><div><b>🌅 Tianjin Binhai</b></div></li>
+      <li><time>2025.05</time><div><b>🌳 Jizhou, Tianjin</b></div></li>
+      <li><time>2025.02</time><div><b>⛰️ Jinan, Tai'an</b> <span>Mount Tai</span></div></li>
+    </ul>
+
+    <h1>2024</h1>
+    <ul class="log">
+      <li><time>2024.10</time><div><b>🌲 Arxan, Shenyang</b></div></li>
+      <li><time>2024.07</time><div><b>🦒 UAE, Qatar, Zambia</b> <span>Dubai, Doha, Lusaka, Livingstone</span></div></li>
+      <li><time>2024.05</time><div><b>🌊 Yantai</b></div></li>
+      <li><time>2024.03</time><div><b>🌃 Hong Kong</b></div></li>
+      <li><time>2024.01</time><div><b>🏙️ Shanghai</b></div></li>
+    </ul>
+
+    <h1>2023</h1>
+    <ul class="log">
+      <li><time>2023.10</time><div><b>❄️ Harbin, Changbai Mountain</b></div></li>
+      <li><time>2023.08</time><div><b>🌴 Shenzhen</b></div></li>
+    </ul>
+
+    <p style="margin-top:2em">
+      I hope these places stay as they are, and that we keep sharing the ocean with the creatures that live in it.
+    </p>
+
+    <a class="back" href="index.html">← Back to homepage</a>
+  </main>
+
+  <script>
+    var btn = document.getElementById('theme-toggle');
+    function sync() { btn.textContent = document.documentElement.dataset.theme === 'dark' ? '☀️' : '🌙'; }
+    btn.onclick = function () {
+      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+    };
+    sync();
+  </script>
+</body>
+</html>
